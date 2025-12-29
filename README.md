@@ -41,6 +41,24 @@ A clean and interactive **User Dashboard UI** built using React.
 - Tailwind CSS  
 
 ---
+## ✅ Task Manager App
+
+A powerful Task Manager application to organize tasks efficiently with a clean and modern UI.
+
+### 🔗 Live Demo
+👉  [View Task Manager](https://taskmanagersu.netlify.app/)
+
+### ✨ Features
+- Add, edit, and delete tasks 📝
+- Mark tasks as completed ✅
+- Task categorization
+- Clean and modern UI
+- Fully responsive design
+
+### 🛠️ Tech Stack
+- React.js
+- Tailwind CSS
+---
 
 ## 📌 Author
 **Surya Bhanu Pandey**  
