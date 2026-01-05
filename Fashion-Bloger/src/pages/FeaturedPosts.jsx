@@ -22,31 +22,35 @@ function FeaturedPosts() {
   ];
 
   return (
-    <section className="py-20 bg-[#fff5f5]">
-      <div className="max-w-6xl mx-auto p-4 ">
-        <h2 className="text-4xl font-bold mb-12">Featured Posts</h2>
+    <section className="py-12 sm:py-16 md:py-20 bg-[#fff5f5]">
+      <div className="max-w-6xl mx-auto px-4 sm:px-5">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12">
+          Featured Posts
+        </h2>
 
-        <div className="grid md:grid-cols-3 gap-10 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
           {posts.map((post, index) => (
             <div key={index} className="group">
               {/* Image */}
-              <div className="overflow-hidden  ">
+              <div className="overflow-hidden">
                 <img
                   src={post.img}
                   alt={post.title}
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-52 sm:h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
               {/* Content */}
-              <div className="mt-6">
-                <h3 className="text-xl font-bold leading-snug">{post.title}</h3>
+              <div className="mt-4 sm:mt-5 md:mt-6">
+                <h3 className="text-lg sm:text-xl font-bold leading-snug">
+                  {post.title}
+                </h3>
 
-                <p className="text-gray-600 mt-4 text-sm leading-relaxed">
+                <p className="text-gray-600 mt-3 sm:mt-4 text-sm leading-relaxed">
                   {post.desc}
                 </p>
 
-                <button className="mt-5 text-pink-500 font-semibold flex items-center gap-1 hover:gap-2 transition-all">
+                <button className="mt-4 sm:mt-5 text-pink-500 font-semibold flex items-center gap-1 hover:gap-2 transition-all">
                   Read More <span>→</span>
                 </button>
               </div>

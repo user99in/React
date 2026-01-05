@@ -4,7 +4,11 @@ import Header from "./component/Header";
 import FeaturedPosts from "./pages/FeaturedPosts";
 import Home from "./pages/Home";
 import AuthorIntro from "./pages/AuthorIntro";
- 
+import BlogPost from "./pages/BlogPost";
+import Post from "./pages/Post";
+import Collaborate from "./pages/Collaborate";
+import Footer from "./component/Footer";
+
 // import About from "./pages/About";
 // import Skills from "./pages/Skills";
 // import Projects from "./pages/Projects";
@@ -23,17 +27,17 @@ function App() {
           element={
             <>
               <Home />
-               
+
               <FeaturedPosts />
               <AuthorIntro />
+              <BlogPost />
+              <Post />
+              <Collaborate />
+              <Footer />
             </>
           }
         />
-        {/* Future Routes */}
-        {/* <Route path="/about" element={<About />} /> */}
-        {/* <Route path="/skills" element={<Skills />} /> */}
-        {/* <Route path="/projects" element={<Projects />} /> */}
-        {/* <Route path="/contact" element={<Contact />} /> */}
+     
       </Routes>
     </BrowserRouter>
   );
