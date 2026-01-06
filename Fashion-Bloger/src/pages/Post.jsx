@@ -11,13 +11,13 @@ import insta5 from "../assets/Image-5.png";
 function Post() {
   return (
     <>
-      <section className="">
+      <section className="pb-10">
         <Heading
           Headings="Follow Me On Instagram"
           className="text-center mb-6 sm:mb-8"
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4   lg:px-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 lg:px-20">
           <Image src={insta} alt="Instagram Image" />
           <Image src={insta1} alt="Instagram Image" />
           <Image src={insta2} alt="Instagram Image" />
