@@ -59,6 +59,40 @@ A powerful Task Manager application to organize tasks efficiently with a clean a
 - React.js
 - Tailwind CSS
 ---
+Here’s the **additional project section** added in the same style as your existing list 👇
+You can paste this directly into your README.
+
+---
+
+## 🔢 Counter App
+
+A simple and interactive **Counter Application** built with React that demonstrates state management and clean UI using Tailwind CSS.
+
+### 🔗 Live Demo
+
+👉 [View Counter App](https://countersap.netlify.app/)
+
+### ✨ Features
+
+* Increment and decrement counter value ➕➖
+* Reset counter functionality 🔄
+* Clean and minimal UI
+* Fully responsive design
+
+### 🛠️ Tech Stack
+
+* React.js
+* JavaScript
+* Tailwind CSS
+
+---
+
+If you want, I can also:
+
+* Reorder projects for better impact 📈
+* Add GitHub repo links
+* Improve descriptions to look more **professional for internships/jobs**
+---
 
 ## 📌 Author
 **Surya Bhanu Pandey**  
