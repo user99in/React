@@ -1,0 +1,96 @@
+:root {
+  --bg-1: #0f0c29;
+  --bg-2: #302b63;
+  --bg-3: #24243e;
+
+  --card-bg: rgba(255, 255, 255, 0.12);
+  --border-glow: rgba(99, 102, 241, 0.8);
+
+  --text-main: #ffffff;
+  --text-muted: #c7c7d1;
+  --accent: #7c7cff;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, var(--bg-1), var(--bg-2), var(--bg-3));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  color: var(--text-main);
+  margin-top: 20px;
+}                                                           
+
+/* Container */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  width: 320px;
+  padding: 28px;
+  border-radius: 20px;
+
+  background: var(--card-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow:
+    0 0 0 rgba(0, 0, 0, 0),
+    0 20px 40px rgba(0, 0, 0, 0.4);
+
+  transition: all 0.4s ease;
+}
+
+/* Glow on hover */
+.card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow:
+    0 0 25px var(--border-glow),
+    0 30px 60px rgba(0, 0, 0, 0.6);
+  border-color: var(--accent);
+}
+
+/* Name */
+.card h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--text-main);
+  letter-spacing: 0.5px;
+}
+
+/* Title */
+.card-title {
+  margin: 10px 0 16px;
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+/* Bio */
+.card p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
